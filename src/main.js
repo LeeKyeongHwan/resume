@@ -4,7 +4,10 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 
-Vue.config.productionTip = false
+import GlobalComponents from './components'
+
+// Vue.config.productionTip = false
+Vue.use(GlobalComponents)
 
 new Vue({
   router,

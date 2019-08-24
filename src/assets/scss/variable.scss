@@ -1,0 +1,20 @@
+/* color */
+$dark: rgb(30,35,40);
+$gray: rgb(243,243,243);
+$red: rgb(240,60,60);
+$orange: rgb(255,160,0);
+$blue: rgb(66,133,244);
+
+@mixin clearfix () {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin ellipsis () {
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
