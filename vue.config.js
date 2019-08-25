@@ -3,20 +3,7 @@
 // vue.config.js
 module.exports = {
   lintOnSave: process.env.NODE_ENV !== 'production',
-  // configureWebpack: {
-  //   plugins: [
-  //     new webpack.ProvidePlugin({
-  //       // jquery
-  //       $: 'jquery',
-  //       'window.jQuery': 'jquery',
-  //       jQuery: 'jquery',
-  //       // Moment
-  //       moment: 'moment',
-  //       // lodash
-  //       '_': 'lodash'
-  //     })
-  //   ]
-  // },
+  publicPath: process.env.NODE_ENV === 'production' ? '/resume/' : '/',
   devServer: {
     host: '0.0.0.0',
     disableHostCheck: true,
@@ -33,5 +20,19 @@ module.exports = {
         `
       }
     }
-}
+  }
+  // configureWebpack: {
+  //   plugins: [
+  //     new webpack.ProvidePlugin({
+  //       // jquery
+  //       $: 'jquery',
+  //       'window.jQuery': 'jquery',
+  //       jQuery: 'jquery',
+  //       // Moment
+  //       moment: 'moment',
+  //       // lodash
+  //       '_': 'lodash'
+  //     })
+  //   ]
+  // },
 }
