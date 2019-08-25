@@ -9,8 +9,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'main',
-      component: () => import(/* webpackChunkName: "about" */ './views/Main.vue')
+      name: 'layout',
+      component: () => import('./views/Layout.vue')
     }
   ]
 })

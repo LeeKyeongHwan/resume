@@ -1,0 +1,12 @@
+@charset 'utf-8';
+@import '@/assets/scss/variable.scss';
+
+.list {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px dotted darken($gray, 20%);
+  &:first-child { border-top: 1px dotted darken($gray, 20%); }
+
+  > li { flex: 1; }
+}

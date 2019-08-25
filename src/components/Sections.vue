@@ -10,9 +10,10 @@
 
 <script>
 export default {
-  name: 'section'
+  name: 'sections'
 }
 </script>
 
 <style lang="scss" scoped>
+.section { margin-bottom: 1rem; }
 </style>

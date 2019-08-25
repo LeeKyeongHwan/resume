@@ -1,27 +1,39 @@
 <template>
-  <div class="main">
+  <main class="main">
     <div class="page_index">
       <profile></profile>
       <about></about>
       <skills></skills>
+      <career-summary></career-summary>
       <career></career>
+      <education></education>
+      <etc></etc>
+      <license></license>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
 import Profile from './Profile'
 import About from './About'
 import Skills from './Skills'
+import CareerSummary from './CareerSummary'
 import Career from './Career'
+import Education from './Education'
+import Etc from './Etc'
+import License from './License'
 
 export default {
-  name: 'main',
+  name: 'layout',
   components: {
     Profile,
     About,
     Skills,
-    Career
+    CareerSummary,
+    Career,
+    Education,
+    Etc,
+    License
   }
 }
 </script>
@@ -29,7 +41,7 @@ export default {
 <style lang="scss" scoped>
 .page_index {
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   max-width: 980px;

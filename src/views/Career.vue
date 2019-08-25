@@ -2,6 +2,12 @@
   <sections class="career">
     <template slot="section_title">경력</template>
 
+    <div class="companies_wrap">
+      <!-- <ul class="list companies" v-for="(item, index) in licenses" :key='index'>
+        <li>{{ item.title }}</li>
+      </ul> -->
+    </div>
+
     <section class="company">
       <h3>회사명</h3>
       <p>2018. 02. ~ 재직</p>
