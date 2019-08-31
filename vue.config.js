@@ -3,7 +3,7 @@
 // vue.config.js
 module.exports = {
   lintOnSave: process.env.NODE_ENV !== 'production',
-  publicPath: process.env.NODE_ENV === 'production' ? '/resume/docs/' : '/',
+  // publicPath: process.env.NODE_ENV === 'production' ? '/resume/docs/' : '/',
   outputDir: 'docs',
   devServer: {
     host: '0.0.0.0',
