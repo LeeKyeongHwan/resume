@@ -3,11 +3,15 @@
     <template slot="section_title">경력요약</template>
 
     <div class="summary_wrap">
-      <ul class="list summary" v-for="(item, index) in career" :key='index'>
-        <li>{{ item.name }}</li>
-        <li>{{ item.date }}</li>
-        <li>{{ item.work }}</li>
-        <li>{{ item.duty }}</li>
+      <ul class="summary list_wrap">
+        <li v-for="(item, index) in career" :key='index'>
+          <ul class="list">
+            <li>{{ item.name }}</li>
+            <li>{{ item.date }}</li>
+            <li>{{ item.work }}</li>
+            <li>{{ item.duty }}</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </sections>

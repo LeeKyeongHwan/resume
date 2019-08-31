@@ -3,11 +3,15 @@
     <template slot="section_title">활동 및 기타</template>
 
     <div class="etc_wrap">
-      <ul class="list etc" v-for="(item, index) in etcs" :key='index'>
-        <li>{{ item.title }}</li>
-        <li>{{ item.date }}</li>
-        <li>{{ item.className }}</li>
-        <li>{{ item.contents }}</li>
+      <ul class="etc list_wrap">
+        <li v-for="(item, index) in etcs" :key='index'>
+          <ul class="list">
+            <li>{{ item.title }}</li>
+            <li>{{ item.date }}</li>
+            <li>{{ item.className }}</li>
+            <li>{{ item.contents }}</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </sections>

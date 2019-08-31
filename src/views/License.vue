@@ -3,10 +3,14 @@
     <template slot="section_title">자격사항</template>
 
     <div class="license_wrap">
-      <ul class="list license" v-for="(item, index) in licenses" :key='index'>
-        <li>{{ item.title }}</li>
-        <li>{{ item.organiztion }}</li>
-        <li>{{ item.date }}</li>
+      <ul class="liecense list_wrap">
+        <li v-for="(item, index) in licenses" :key='index'>
+          <ul class="list">
+            <li>{{ item.title }}</li>
+            <li>{{ item.organiztion }}</li>
+            <li>{{ item.date }}</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </sections>
