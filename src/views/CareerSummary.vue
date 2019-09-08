@@ -6,7 +6,7 @@
       <ul class="summary list_wrap">
         <li v-for="(item, index) in career" :key='index'>
           <ul class="list">
-            <li>{{ item.name }}</li>
+            <li class="list__title">{{ item.name }}</li>
             <li>{{ item.date }}</li>
             <li>{{ item.work }}</li>
             <li>{{ item.duty }}</li>

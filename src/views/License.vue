@@ -6,7 +6,7 @@
       <ul class="liecense list_wrap">
         <li v-for="(item, index) in licenses" :key='index'>
           <ul class="list">
-            <li>{{ item.title }}</li>
+            <li class="list__title">{{ item.title }}</li>
             <li>{{ item.organiztion }}</li>
             <li>{{ item.date }}</li>
           </ul>

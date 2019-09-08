@@ -6,7 +6,7 @@
       <ul class="etc list_wrap">
         <li v-for="(item, index) in etcs" :key='index'>
           <ul class="list">
-            <li>{{ item.title }}</li>
+            <li class="list__title">{{ item.title }}</li>
             <li>{{ item.date }}</li>
             <li>{{ item.className }}</li>
             <li>{{ item.contents }}</li>

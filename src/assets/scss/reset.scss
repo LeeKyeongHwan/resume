@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: 'Noto Sans Kr', Arial, sans-serif;
   color: $dark;
-  background-color: $gray;
+  background-color: lighten($gray, 3%);
 }
 
 ol, ul, li {

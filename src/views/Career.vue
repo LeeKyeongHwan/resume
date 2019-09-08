@@ -4,7 +4,7 @@
 
     <ul class="company_wrap">
       <li class="company" v-for="(company, index_c) in companies" :key="`company_${index_c}`">
-        <div class="company_item">
+        <div class="company_item company__info">
           <p class="company__title">{{ company.title }}</p>
           <p>{{ company.date }}</p>
           <p>{{ company.team }}</p>
@@ -163,5 +163,10 @@ export default {
         }
       }
   }
+}
+
+@media (max-width: 717px) {
+  .company { flex-direction: column; }
+  .company__info p { margin: .5em 0;}
 }
 </style>

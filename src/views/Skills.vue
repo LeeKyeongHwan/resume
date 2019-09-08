@@ -22,7 +22,7 @@
           <li class="skill">Semantic UI</li>
         </ul>
       </li>
-      <li class="skills list">
+      <li class="skills">
         <div class="skill__title">Etc / Tools</div>
         <ul class="skill_list">
           <li class="skill">NPM / Yarn</li>
@@ -64,7 +64,10 @@ export default {
     border-bottom: 1px dotted darken($gray, 20%);
     &:first-child { border-top: 1px dotted darken($gray, 20%); }
 
-    .skill__title { flex: 3; }
+    .skill__title {
+      flex: 3;
+      font-weight: 700;
+    }
     .skill_list {
       flex: 9;
 
@@ -80,6 +83,10 @@ export default {
         &.skill--past { color: darken($gray, 20%); }
       }
     }
+  }
+
+  @media (max-width: 717px) {
+    .skills { flex-direction: column; }
   }
 }
 </style>

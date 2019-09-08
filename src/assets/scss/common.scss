@@ -9,4 +9,14 @@
   border-bottom: 1px dotted darken($gray, 20%);
 
   > li { flex: 1; }
+
+  .list__title { font-weight: 700; }
+}
+
+@media (max-width: 717px) {
+  html, body { font-size: 12px; }
+  .list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

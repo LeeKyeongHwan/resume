@@ -48,6 +48,10 @@ export default {
   background-color: #fff;
   box-shadow: 1px 2px 3px rgba($dark, .2);
 }
+
+@media (max-width: 717px) {
+  .page_index { margin: 0; }
+}
 </style>
 <style lang="scss">
 @media print {
